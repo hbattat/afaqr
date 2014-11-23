@@ -58,7 +58,9 @@ class profile_field_afaqr extends profile_field_base {
         $mform->addElement($fieldtype, $this->inputname, format_string($this->field->name), 'maxlength="'.$maxlength.'" size="'.$size.'" ');
         $mform->setType($this->inputname, PARAM_TEXT);
 	$mform->addElement('hidden', 'a2fa_baseurl', $CFG->wwwroot);
+	$mform->setType('a2fa_baseurl', PARAM_TEXT);
 	$mform->addElement('button', 'newsecret', get_string('newsecret', 'profilefield_afaqr'));
+	$mform->setType('newsecret', PARAM_TEXT);
     }
 
 }
