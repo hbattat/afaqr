@@ -28,3 +28,4 @@ $plugin->version   = 2014110500;        // The current plugin version (Date: YYY
 $plugin->requires  = 2014050800;        // Requires this Moodle version
 $plugin->component = 'profilefield_afaqr'; // Full name of the plugin (used for diagnostics)
 $plugin->release = 'v1.0';
+$plugin->maturity = MATURITY_STABLE;
